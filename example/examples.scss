@@ -1,0 +1,60 @@
+@use '../scss/utils' as *;
+//Animations
+@include keyframe(my-animation, false, (top: 0, left: 0), (top: 100, left: 100));
+@include keyframe(my-animation, true) {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100;
+    }
+}
+
+//Class utilils
+@include genColorUtils( ( blue: ( dark: darkblue, regular: blue), red: (dark: darkred, regular: red)));
+//Media query
+//Min, max: false
+@include mq(100) {
+    left: 0;
+}
+
+@include mq(false, 100) {
+    left: 10;
+}
+
+@include mq(10, 100) {
+    left: 20;
+}
+
+//Numbers
+.goldenRectangle {
+    //Size, vertical
+    @include goldenRectangle(100);
+}
+
+.goldenRectangleVert {
+    @include goldenRectangle(100, true);
+}
+
+.piRectangle {
+    //Size, vertical
+    @include piRectangle(100);
+}
+
+.piRectangleVert {
+    @include piRectangle(100, true);
+}
+
+//Use the numbers
+//Phi is the golden ratio
+$ratio: $phi;
+//Pi is pi
+$pizza: $pi;
+//You can also quick-multiply by them
+//These all return a number
+.irrational {
+    //100 * pi
+    width: pi(100);
+    //100 * phi
+    height: phi(100);
+}

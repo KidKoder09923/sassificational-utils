@@ -4,6 +4,10 @@ $pi: 3.14159265358978323846264338325764623;
     @return $multiplier * $phi;
 }
 
+@function pi($multiplier) {
+    @return $multiplier * $pi;
+}
+
 @mixin goldenRectangle($size, $vert: false) {
     @if $vert==true {
         width: $size;
