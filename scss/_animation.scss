@@ -1,0 +1,21 @@
+@mixin keyframe($name, $use-content: false, $from: false, $to: false) {
+    @if $use-content==false {
+        @keyframes #{$name} {
+            from {
+                @each $prop,
+                $val in $from {
+                    #{$prop}: $val;
+                }
+            }
+            to {
+                @each $prop,
+                $val in $to {
+                    #{$prop}: $val;
+                }
+            }
+        }
+    }
+    @if $use-content==true {
+        @content;
+    }
+}

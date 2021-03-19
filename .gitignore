@@ -6,6 +6,8 @@
 ## CSS Map ##
 *.css.map
 
+test/*
+
 
 ### macOS ###
 # General
