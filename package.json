@@ -1,0 +1,12 @@
+{
+    "name": "sassificational-utils",
+    "version": "1.0.0",
+    "description": "A whoel bunch a sassy utils",
+    "main": "README.md",
+    "keywords": [
+        "sass",
+        "utils"
+    ],
+    "author": "Kid koder",
+    "license": "MIT"
+}

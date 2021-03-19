@@ -1,0 +1,30 @@
+@mixin genTextUtils($map) {
+    //Generate map utilities
+    @each $type,
+    $shades in $map {
+        @each $shade,
+        $color in $shades {
+            .text-#{$type}-#{$shade} {
+                color: $color;
+            }
+        }
+    }
+}
+
+@mixin genBgUtils($map) {
+    //Generate map utilities
+    @each $type,
+    $shades in $map {
+        @each $shade,
+        $color in $shades {
+            .bg-#{$type}-#{$shade} {
+                color: $color;
+            }
+        }
+    }
+}
+
+@mixin genColorUtils($map) {
+    @include genBgUtils($map);
+    @include genTextUtils($map);
+}
