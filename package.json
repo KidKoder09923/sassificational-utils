@@ -1,7 +1,7 @@
 {
     "name": "sassificational-utils",
     "version": "1.0.0",
-    "description": "A whole bunch a utility classes for your SCSS code",
+    "description": "A whole bunch of utilities for your SCSS code",
     "main": "README.md",
     "keywords": [
         "sass",
