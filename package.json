@@ -8,5 +8,10 @@
         "utils"
     ],
     "author": "Kid Koder",
-    "license": "MIT"
+    "license": "MIT",
+    "repository": {
+     "type": "git",
+     "url": "https://github.com/KidKoder09923/sassificational-utils"
+     },
+    "homepage": "https://github.com/KidKoder09923/sassificational-utils#readme"
 }
